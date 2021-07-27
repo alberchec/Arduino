@@ -17,10 +17,6 @@ void check_pot(){
       last = millis();
     }
   }
-  //if( (millis()-last) > 500 ){
-    //if(pot_dif < 5) led_state = HIGH;
-  //}
-
   if(led_state) digitalWrite(8,HIGH);
   else          digitalWrite(8,LOW);
 }
