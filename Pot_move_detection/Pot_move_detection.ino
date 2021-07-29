@@ -7,11 +7,12 @@ void loop() {
   static int sum = 0;
   static int prev_pot = 250;
   static unsigned long last = 0;
-  int pot = analogRead(A0);
   static byte counter = 0;
   static byte counter2 = 0;
   static bool pot_state = false;
+  
   bool raw_state;
+  int pot = analogRead(A0);
   
   if( (millis() - last) > 20 ){
     sum += pot;
