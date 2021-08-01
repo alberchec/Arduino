@@ -12,9 +12,9 @@ void loop() {
   static bool pot_state = false;
   
   bool raw_state;
-  int pot = analogRead(A0);
   
   if( (millis() - last) > 20 ){
+    int pot = analogRead(A0);
     sum += pot;
     last = millis();
     counter++;
