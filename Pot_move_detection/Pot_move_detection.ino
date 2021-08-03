@@ -13,7 +13,7 @@ void loop() {
   
   bool raw_state;
   
-  if( (millis() - last) > 20 ){
+  if( (millis() - last) > 15 ){
     int pot = analogRead(A0);
     sum += pot;
     last = millis();
