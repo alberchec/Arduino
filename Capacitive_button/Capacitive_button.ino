@@ -37,7 +37,7 @@ bool Capacitive_button::read(){
 
 //Example
 
-Capacitive_button cb(7,5,100);
+Capacitive_button cb(7,5,300);
 
 bool led_state = false;
 

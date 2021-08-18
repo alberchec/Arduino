@@ -5,7 +5,7 @@
 
 class Capacitive_button {
   private:
-    static const byte check_msec = 4;
+    static const byte check_msec = 2;
     static const byte press_msec = 20;
     static const byte release_msec = 20;
     static unsigned long interval;
