@@ -5,9 +5,9 @@
 
 class Capacitive_button {
   private:
-    static const byte check_msec = 2;
-    static const byte press_msec = 20;
-    static const byte release_msec = 20;
+    static const byte check_msec = 10;
+    static const byte press_msec = 30;
+    static const byte release_msec = 30;
     static unsigned long interval;
     static byte count;
     bool debounced_state;
