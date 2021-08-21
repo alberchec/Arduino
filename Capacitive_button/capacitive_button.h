@@ -1,5 +1,5 @@
-#ifndef PUSH_BUTTON
-#define PUSH_BUTTON
+#ifndef CAPACITIVE_BUTTON
+#define CAPACITIVE_BUTTON
 
 #include <CapacitiveSensor.h>
 

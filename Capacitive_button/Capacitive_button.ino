@@ -36,7 +36,7 @@ bool Capacitive_button::read(){
 }
 
 //Example
-
+/*
 Capacitive_button cb(7,5,250);
 
 bool led_state = false;
@@ -52,4 +52,4 @@ void loop() {
   
   if(led_state) digitalWrite(8,HIGH);
   else          digitalWrite(8,LOW);
-}
+}*/
