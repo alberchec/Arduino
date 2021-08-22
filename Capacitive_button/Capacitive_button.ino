@@ -3,6 +3,7 @@
 void Capacitive_button::debounce(bool& result){
   bool raw_state;
   long sensorValue = sensor->capacitiveSensor(30);
+  Serial.println(sensorValue);
   
   if(sensorValue > threshold) raw_state = true;
   else                        raw_state = false;
@@ -36,13 +37,14 @@ bool Capacitive_button::read(){
 }
 
 //Example
-/*
+
 Capacitive_button cb(7,5,250);
 
 bool led_state = false;
 
 void setup() {
   pinMode(8,OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -52,4 +54,4 @@ void loop() {
   
   if(led_state) digitalWrite(8,HIGH);
   else          digitalWrite(8,LOW);
-}*/
+}
