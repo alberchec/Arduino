@@ -26,3 +26,9 @@ bool Button_base::read(){
   }
   return result;
 }
+
+void Button_base::set_parameters(byte a, byte b, byte c){
+  check_msec = a;
+  press_msec = b;
+  release_msec = c;
+}

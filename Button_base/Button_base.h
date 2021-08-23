@@ -17,6 +17,7 @@ class Button_base {
   public:
     Button_base();
     virtual bool read();
+    void set_parameters(byte,byte,byte);
 };
 //unsigned long Button_base::interval = 0;
 //byte Button_base::count = 2;

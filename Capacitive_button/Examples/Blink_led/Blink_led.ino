@@ -5,6 +5,7 @@ Capacitive_button cb(7,5,250);
 bool led_state = false;
 
 void setup() {
+  cb.set_parameters(10,20,20);
   pinMode(8,OUTPUT);
 }
 
