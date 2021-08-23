@@ -7,5 +7,5 @@ Push_button::Push_button(byte p){
 
 bool Push_button::read(){
   raw_state = !digitalRead(port);
-  Button_base::read();
+  return Button_base::read();
 }
