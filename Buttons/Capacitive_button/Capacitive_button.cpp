@@ -31,10 +31,10 @@ bool Capacitive_button::signal_processing(){
   }else{
     integ = last_integ;
   }
-
+  
   if(integ > it){
-    return true;
     //last_integ = integ;
+    return true;
   }else{
     last_integ = integ * leakage;
   }
