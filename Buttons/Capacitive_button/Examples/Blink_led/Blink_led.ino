@@ -1,12 +1,13 @@
 #include <Capacitive_button.h>
 
-Capacitive_button cb(7,5,250);
+Capacitive_button cb(7,5,150);
 
 bool led_state = false;
 
 void setup() {
   cb.set_parameters(10,20,20);
   pinMode(8,OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
