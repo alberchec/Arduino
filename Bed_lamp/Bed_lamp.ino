@@ -1,7 +1,7 @@
 #include <avr/wdt.h>
 #include <EEPROM.h>
-#include "capacitive_button.h"
-#include "Push_button.h"
+#include <Capacitive_button.h>
+#include <Push_button.h>
 
 #define s_pin 12
 #define r_pin 10
@@ -22,7 +22,8 @@ void setup() {
   wdt_enable(WDTO_2S);
   pinMode(relay_pin,OUTPUT);
   EEPROM.get(0,threshold);
-  if(threshold < 3500 && threshold > 8000) threshold = 3500;
+  if(threshold < thld_min && threshold > thld_max) threshold = thld_min;
+  cb.set_parameters(10,30,30);
 }
 
 void loop() {
