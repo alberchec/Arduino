@@ -8,6 +8,7 @@ class Capacitive_button : public Button_base{
   private:
     CapacitiveSensor* sensor;
     int threshold;
+    bool signal_processing();
   public:
     Capacitive_button(uint8_t,uint8_t,const int);
     bool read();

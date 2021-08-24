@@ -1,6 +1,6 @@
 #include <Capacitive_button.h>
 
-Capacitive_button cb(7,5,150);
+Capacitive_button cb(7,5,500);
 
 bool led_state = false;
 
