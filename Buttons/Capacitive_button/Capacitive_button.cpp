@@ -13,3 +13,7 @@ bool Capacitive_button::read(){
 
   return Button_base::read();
 }
+
+void Capacitive_button::set_threshold(int thld){
+  threshold = thld;
+}

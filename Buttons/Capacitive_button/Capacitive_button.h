@@ -11,6 +11,7 @@ class Capacitive_button : public Button_base{
   public:
     Capacitive_button(uint8_t,uint8_t,const int);
     bool read();
+    void set_threshold(int);
 };
 
 #endif
