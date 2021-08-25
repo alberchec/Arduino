@@ -1,7 +1,7 @@
 #include <Cap_sensor.h>
 
 Cap_sensor::Cap_sensor(uint8_t send_pin,uint8_t receive_pin,unsigned int thld){
-	sensor = new CapacitiveSensor(send_pin,receive_pin)
+	sensor = new CapacitiveSensor(send_pin,receive_pin);
 	threshold = thld;
 }
 
@@ -31,6 +31,6 @@ bool Cap_sensor::signal_processing(){
   return false;
 }
 
-Cap_sensor::set_threshold(unsigned int thld){
+void Cap_sensor::set_threshold(unsigned int thld){
 	threshold = thld;
 }
