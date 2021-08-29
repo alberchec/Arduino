@@ -1,4 +1,4 @@
-#include "Pot_control.h"
+#include <Pot_control.h>
 
 Pot::Pot(byte p){
   port = p;
